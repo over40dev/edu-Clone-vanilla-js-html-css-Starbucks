@@ -2,9 +2,12 @@
 
 :root {
   --color-primary: #006241;
-  --color-secondar: #d50032;
+  --color-secondary: #d50032;
   --color-extra: #d4e9e2;
+  --color-dark: #000;
 }
+
+/* Base Styles */
 
 * {
   box-sizing: border-box;
@@ -33,6 +36,10 @@ p {
 
 img {
   max-width: 100%;
+}
+
+section a {
+  color: #fff;
 }
 
 /* nav bar */
@@ -100,6 +107,16 @@ box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0
 margin: 0 5px;
 }
 
+/* Box */
+.box {
+  margin-bottom: 30px;
+}
+
+.box-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 /* Buttons */
 .btn {
   cursor: pointer;
@@ -132,8 +149,96 @@ margin: 0 5px;
   background-color: #333;
 }
 
-
 .btn-light-outline {
   border-color: #fff;
   color: #fff;
 }
+
+/* Backgrounds */
+.bg-primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.bg-secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.bg-extra {
+  background: var(--color-extra);
+  color: #000;
+}
+
+.bg-dark {
+  background: var(--color-dark);
+  color: #fff;
+}
+
+/* Text Styling */
+.text-center {
+  text-align: center;
+}
+
+.text-xl {
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.text-lg {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.text-md {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.text-sm {
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+
+/* Padding */
+.py-lg {
+  padding: 40px 0;
+}
+.py-md {
+  padding: 20px 0;
+}
+.py-sm {
+  padding: 10px 0;
+}
+
+/* Media Queries */
+
+/* only applied if 960px Or LESS - i.e. <= 960px*/
+@media (max-width: 960px) {
+  .text-xl {
+    font-size: 30px;
+  }
+
+  .text-lg {
+    font-size: 25px;
+  }
+
+  .text-md {
+    font-size: 19px;
+  }
+}
+
+/* only applied if  width > 1440px*/
+@media (min-width: 1440px) {
+  .box {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
