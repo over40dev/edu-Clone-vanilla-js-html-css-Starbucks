@@ -298,6 +298,31 @@ height: 35px;
   }
 }
 
+/* only applied if 768px Or LESS - i.e. <= 768px*/
+@media (max-width: 960px) {
+  .grid-col-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-reversed :first-child {
+    order: 0;
+  }
+
+  .navbar-brand img {
+width: 40px;
+height: 40px;
+  }
+
+  .navbar .navbar-nav-left,
+  .navbar .navbar-nav-right {
+    display: none;
+  }
+
+  .footer {
+    text-align: center;
+  }
+}
+
 /* only applied if  width > 1440px*/
 @media (min-width: 1440px) {
   .box {
@@ -310,3 +335,5 @@ height: 35px;
     max-width: 90%;
   }
 }
+
+
