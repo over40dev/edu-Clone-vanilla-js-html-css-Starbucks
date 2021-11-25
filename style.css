@@ -50,8 +50,6 @@ section a {
   margin: 40px auto;
 }
 
-
-
 /* navbar */
 
 .navbar {
@@ -140,8 +138,8 @@ section a {
 }
 
 .footer-container img {
-width: 35px;
-height: 35px;
+  width: 35px;
+  height: 35px;
 }
 
 /* Box */
@@ -281,6 +279,39 @@ height: 35px;
   padding: 10px 0;
 }
 
+/* Hamburger Menu Icon */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  background: none;
+  border: none;
+  z-index: 10;
+  transition: all 0.25s;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  background: #000;
+  height: 2px;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
 /* Media Queries */
 
 /* only applied if 960px Or LESS - i.e. <= 960px*/
@@ -309,8 +340,8 @@ height: 35px;
   }
 
   .navbar-brand img {
-width: 40px;
-height: 40px;
+    width: 40px;
+    height: 40px;
   }
 
   .navbar .navbar-nav-left,
@@ -335,5 +366,3 @@ height: 40px;
     max-width: 90%;
   }
 }
-
-
